@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <h1>All Articles</h1>
+
+    <table style="width: 500px">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% @articles.each do |article| %>
+            <tr>
+                <td><%= article.title %></td>
+                <td><%= article.description %></td>
+                <td><button>test</button></td>
+            </tr>
+            <% end %>
+        </tbody>
+    </table>
+</body>
+</html>
