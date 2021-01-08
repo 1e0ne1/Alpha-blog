@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         
         <%= link_to "ALPHA BLOG", root_path, class: "navbar-brand", id: "logo"  %>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -14,9 +14,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <%= link_to "Create new article", new_article_path, class: "dropdown-item" %>
                 <%= link_to "View articles", articles_path, class: "dropdown-item" %>
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                
             </div>
             </li>
         </ul>
