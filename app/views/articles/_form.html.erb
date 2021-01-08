@@ -2,7 +2,7 @@
     
     <div class="row justify-content-center">
         <div class="col-10">
-            <%= render 'shared/errors' %>
+            <%= render 'shared/errors', obj: @article %>
             <p>Please fill the fields with the requested parameters</p>
 
             <%= form_with(model: @article, class: "p-4 shadow mb-2 bg-info rounded", local: true)  do |f| %>

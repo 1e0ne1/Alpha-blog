@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   # resources :articles, only: [:show, :index, :create, :new, :edit, :update, :destroy]
   resources :articles
+
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
 end
